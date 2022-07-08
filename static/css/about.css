@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.both_prof{
+    display: flex;
+    padding-top: 52px;
+}
+#fir{
+    background-image: url(/static/img/contact-rev.jpeg);
+    width: 40vw;
+    height: 40vh;
+    border-radius: 40%;
+    background-repeat: no-repeat;
+}
+#sec{
+    background-image: url(/static/img/contact.jpg);
+    width: 40vw;
+    height: 40vh;
+    border-radius: 40%;
+    background-repeat: no-repeat;
+}
+#thir{
+    background-image: url(/static/img/contact-rev.jpeg);
+    width: 40vw;
+    height: 40vh;
+    border-radius: 40%;
+    background-repeat: no-repeat;
+}
+.fir{
+    width: 80vw;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(20, 159, 159, 0.69);
+    font-size: larger;
+    font-family: cursive;
+}
+
+.mainmap{
+    display: flex; 
+}
+.AKPK {
+    width: 20vw;
+    height: 35vh;
+    border-radius: 100%;
+    padding-right: 10px;
+}
+.mapouter{
+    padding-right: 25px;
+}
+.developer{
+    display: flex;
+    /* flex-direction: column; */
+    text-align:center;
+    justify-content: center;
+    font-family: cursive;
+    /* color: rgb(14, 189, 208); */
+}
+.developer span{
+   /* background-color: rgb(77, 123, 128) ;  */
+   font-weight: 900;
+   padding: 5px 5px 2px 4px;
+}
+.devphead h3{
+    justify-content: center;
+    text-align: center;
+}
+.det {
+    display: flex;
+    flex-direction: column;
+}
+.abhidet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.dev{
+    font-size:x-large;
+    color: rgb(34, 202, 202);
+    font-family: 'Lilita One', cursive;
+}
+
+
+/* about dr's profile */
+
+
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  /* * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
+  } */
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+  .fac{
+    padding-bottom: 0;   
+    justify-content: center;
+    margin: auto;
+    width: 45vw;
+    text-align:center;
+    font-family: cursive;
+    color: rgb(37, 172, 172);
+    background: linear-gradient(45deg, red, rgb(3, 3, 135));
+    font-family: cursive;
+    font-weight: bold;
+  }
+
+  .gmap_canvas{
+    border-style:solid;
+  }
