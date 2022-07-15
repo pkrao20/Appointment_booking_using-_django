@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/form.css">
+    <title>PATHEOLOGY</title>
+    <style>
+      body{
+        background-image: url(/static/img/form3path.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container" style="background-color: white;">
+      <form class="" action="/form3" method="POST">
+        {%csrf_token%}
+        <input type="text" name="name" placeholder="Enter Patient Name" id="">
+        <input type="text" name="contact" placeholder="Enter Patient contact number" id="">
+        <input type="text" name="symptom" placeholder="Enter Patient symptom" id="">
+        <input type="date" name="date" placeholder="Select the time for Appointment" id="">
+        <input type="time" name="time" placeholder="Select time for the Appointment" id="">
+        <select name="doctor" id="dr">
+          <option value="volvo">Select the Doctor</option>
+          <option value="bangali dr1">DR1</option>
+          <option value="bangali dr2">DR2</option>
+          <option value="bangali dr3">DR3</option>
+          <option value="dr hakim">DR4</option>
+          <option value="dr bharose wale">DR4</option>
+          <option value="dr jonyshin">DR4</option>
+        </select>
+        <button class="btn">Book Now</button>
+      </form>
+
+    </div>
+
+
+ 
+  </body>
+</html>
